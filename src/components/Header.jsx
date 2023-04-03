@@ -24,6 +24,7 @@ const Header = ({ menuIcon, navBar, loh, activeLink, activeLinkClick }) => {
               href={link.href}
               activeLink={activeLink}
               activeLinkClick={activeLinkClick}
+              loh={loh}
             />
           ))}
         </ul>

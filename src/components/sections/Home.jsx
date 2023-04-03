@@ -3,11 +3,6 @@ import { useRef } from 'react'
 import myPhoto from './../../images/photos/sticker.png'
 
 const Home = ({ homeRef }) => {
-  // const ref = () => {
-  //   console.log(home)
-  //   console.log(home.current.id)
-  // }
-
   return (
     <section ref={homeRef} className="home section" id="home">
       <div className="home__content">

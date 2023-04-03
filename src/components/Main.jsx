@@ -1,23 +1,31 @@
-import Home from './sections/Home'
-import About from './sections/About'
-import Portfolio from './sections/Portfolio'
-import Contacts from './sections/Contacts'
-
 const Main = props => {
-  console.log(props.children[0].type.name)
-  return (
-    <main className="main">
-      {props.children}
+  window.onscroll = () => {
+    props.children.forEach(sec => {
+      const secCurrent = Object.values(sec.props)[0].current
+      const name = sec.type.name
 
-      {/* <Home />
+      const text =
+        name == 'Home'
+          ? 'Главный экран'
+          : name == 'About'
+          ? 'Обо мне'
+          : name == 'Portfolio'
+          ? 'Портфолио'
+          : name == 'Contacts'
+          ? 'Контакты'
+          : ''
 
-      <About />
+      const top = window.scrollY
+      const offset = secCurrent.offsetTop - 200
+      const height = secCurrent.offsetHeight
 
-      <Portfolio />
+      if (top >= offset && top < offset + height) {
+        props.activeLinkScroll(text)
+      }
+    })
+  }
 
-      <Contacts /> */}
-    </main>
-  )
+  return <main className="main">{props.children}</main>
 }
 
 export default Main
