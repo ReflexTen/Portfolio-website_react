@@ -1,0 +1,52 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: $second-bg-color;
+
+  @include media-3 {
+    flex-direction: column-reverse;
+  }
+
+  // .about__img-box
+  &__img-box {
+  }
+  // .about__img
+  &__img {
+    width: 35vw;
+
+    @include media-3 {
+      width: 70vw;
+      margin-top: 4rem;
+    }
+
+    @include media-4 {
+      width: 90vw;
+    }
+  }
+  // .about__content
+  &__content {
+    font-size: 2.6rem;
+  }
+  // .about__heading
+  &__heading {
+    text-align: left;
+    line-height: 1.2;
+  }
+  // .about__content-subtitle
+  &__content-subtitle {
+  }
+  // .about__content-text
+  &__content-text {
+    max-width: 60rem;
+    width: 100%;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+  }
+  // .about__content-btn
+  &__content-btn {
+  }
+}
+.section {
+}

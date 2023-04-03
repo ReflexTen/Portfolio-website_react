@@ -1,0 +1,24 @@
+//Подключение базовых стилей
+@import 'common/vars';
+@import 'common/fonts';
+@import 'common/reset';
+// @import 'common/libs';
+@import 'common/global';
+
+//Подключение компонентов
+
+//Подключение секций//************************
+
+//header
+@import 'header';
+
+//main
+@import 'sections/home';
+@import 'sections/about';
+@import 'sections/portfolio';
+@import 'sections/contacts';
+
+//main
+
+//footer
+@import 'footer';
