@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useRef } from 'react'
 
-import './styles/style.scss'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
@@ -9,11 +8,12 @@ import Home from './components/sections/Home'
 import About from './components/sections/About'
 import Portfolio from './components/sections/Portfolio'
 import Contacts from './components/sections/Contacts'
+import './styles/style.scss'
 
 function App() {
+  const [activeLink, setActiveLink] = useState('Главный экран')
   const menuIcon = useRef()
   const navBar = useRef()
-
   const portfolio = useRef()
   const contacts = useRef()
   const homeRef = useRef()
@@ -23,8 +23,6 @@ function App() {
     menuIcon.current.classList.toggle('active-menu')
     navBar.current.classList.toggle('active')
   }
-
-  const [activeLink, setActiveLink] = useState('Главный экран')
 
   const activeLinkHandler = link => {
     setActiveLink(link)
