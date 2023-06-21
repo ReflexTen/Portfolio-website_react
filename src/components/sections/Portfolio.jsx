@@ -14,7 +14,7 @@ const Portfolio = ({ portfolio }) => {
     <section ref={portfolio} className={`portfolio section`} id="portfolio">
       <Fade top {...properties}>
         <h2 className="portfolio__heading heading">
-          Latest <span>project</span>
+          Последние <span>проекты</span>
         </h2>
       </Fade>
       <Fade bottom {...properties}>
@@ -26,6 +26,7 @@ const Portfolio = ({ portfolio }) => {
               title={project.title}
               text={project.text}
               link={project.link}
+              linkGitHub={project.linkGitHub}
             />
           ))}
         </ul>

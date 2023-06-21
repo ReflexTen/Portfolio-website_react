@@ -1,5 +1,5 @@
 import React from 'react'
-import myPhoto from './../../images/photos/sticker.png'
+import myPhoto from './../../images/photos/my-photo.png'
 
 import Fade from 'react-reveal/Fade'
 
@@ -25,22 +25,38 @@ const Home = ({ homeRef }) => {
 
           <ul className="home__social-media social-media">
             <li className="social-media__item">
-              <a className="social-media__link" href="#">
+              <a
+                className="social-media__link"
+                href="https://wa.me/79273355448"
+                target="blank"
+              >
                 <i className="bx bxl-whatsapp"></i>
               </a>
             </li>
             <li className="social-media__item">
-              <a className="social-media__link" href="#">
+              <a
+                className="social-media__link"
+                href="https://t.me/bulanov_roman"
+                target="blank"
+              >
                 <i className="bx bxl-telegram"></i>
               </a>
             </li>
             <li className="social-media__item">
-              <a className="social-media__link" href="#">
+              <a
+                className="social-media__link"
+                href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fbulanov_rf%3Figshid%3DMmIzYWVlNDQ5Yg%3D%3D&cc_key="
+                target="blank"
+              >
                 <i className="bx bxl-instagram"></i>
               </a>
             </li>
             <li className="social-media__item">
-              <a className="social-media__link" href="#">
+              <a
+                className="social-media__link"
+                href="https://vk.com/reflexiv"
+                target="blank"
+              >
                 <i className="bx bxl-vk"></i>
               </a>
             </li>
