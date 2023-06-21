@@ -29,7 +29,6 @@
     border-radius: 2rem;
     box-shadow: 0 0 1rem #111316;
     overflow: hidden;
-    display: flex;
 
     &:hover {
       & .portfolio {
@@ -38,6 +37,7 @@
         }
         &__img {
           transform: scale(1.1);
+          opacity: 0.3;
         }
       }
     }
@@ -60,6 +60,7 @@
     height: 100%;
     padding: 0 4rem;
     background: linear-gradient(rgba(0, 0, 0, 0.1), $main-color);
+    font-size: 1.7em;
     text-align: center;
     transform: translateY(100%);
     transition: 0.5s ease;
@@ -70,7 +71,7 @@
   }
   // .portfolio__text
   &__text {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 0.3rem 0 1rem;
   }
   // .portfolio__link
@@ -84,9 +85,12 @@
     border-radius: 50%;
     transition: 0.3s ease;
 
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
     &:hover {
       transform: scale(1.1);
-      // background-color: $main-color;
     }
 
     & i {
@@ -94,14 +98,4 @@
       color: $second-bg-color;
     }
   }
-}
-.section {
-}
-.heading {
-}
-.min-title {
-}
-.bx {
-}
-.bx-link-external {
 }

@@ -22,7 +22,7 @@ const About = ({ aboutRef }) => {
         <div className="about__content">
           <Fade top {...properties}>
             <h2 className="about__heading heading">
-              About <span>me</span>
+              Обо <span>мне</span>
             </h2>
           </Fade>
 
@@ -30,17 +30,18 @@ const About = ({ aboutRef }) => {
             Front-end Developer
           </h3>
           <p className="about__content-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nemo
-            maxime exercitationem. Cumque inventore nam sequi delectus
-            blanditiis! Aperiam, est? Saepe nesciunt cupiditate numquam, fuga
-            facilis error quod dolor eum hic aspernatur doloremque omnis cum
-            sapiente dolores officiis pariatur deleniti provident in
-            voluptatibus accusantium porro? Quam?
+            Роман - фронтенд разработчик, полон страсти к изучению
+            веб-разработки. Стремлюсь создавать красивые и функциональные
+            веб-сайты, и веб-приложения, используя передовые технологии. Опыт
+            работы с HTML, CSS, JavaScript и фреймворками, такими как React.
+            Люблю учиться новому и постоянно совершенствовать свои навыки.
+            Подписывайтесь на мои аккаунты в Vkontakte, Telegram и Instagram.
+            Давайте создадим что-то потрясающее вместе!
           </p>
 
-          <a className="about__content-btn btn" href="#">
+          {/* <a className="about__content-btn btn" href="#">
             Read more
-          </a>
+          </a> */}
         </div>
       </Fade>
     </section>

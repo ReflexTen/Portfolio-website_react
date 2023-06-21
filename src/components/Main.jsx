@@ -10,9 +10,9 @@ const Main = props => {
           : name == 'About'
           ? 'Обо мне'
           : name == 'Portfolio'
-          ? 'Портфолио'
+          ? 'Последние проекты'
           : name == 'Contacts'
-          ? 'Контакты'
+          ? 'Связаться со мной'
           : ''
 
       const top = window.scrollY
