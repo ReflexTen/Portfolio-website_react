@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website_react/static/css/main.78a23234.css",
-    "main.js": "/portfolio-website_react/static/js/main.13dc4323.js",
+    "main.css": "/portfolio-website_react/static/css/main.277f91a3.css",
+    "main.js": "/portfolio-website_react/static/js/main.c8fa13c4.js",
     "static/media/my-photo-2.png": "/portfolio-website_react/static/media/my-photo-2.1b8ee4488753904f1f38.png",
     "static/media/my-photo.png": "/portfolio-website_react/static/media/my-photo.0e21e09823dacbdbacb2.png",
     "static/media/project-03.jpg": "/portfolio-website_react/static/media/project-03.1d4286a949fe46e65ffb.jpg",
@@ -28,11 +28,11 @@
     "static/media/Poppins-Black.woff2": "/portfolio-website_react/static/media/Poppins-Black.3518e64b21103e4b2d47.woff2",
     "static/media/my-logo.png": "/portfolio-website_react/static/media/my-logo.e3725f9b182f344c800f.png",
     "index.html": "/portfolio-website_react/index.html",
-    "main.78a23234.css.map": "/portfolio-website_react/static/css/main.78a23234.css.map",
-    "main.13dc4323.js.map": "/portfolio-website_react/static/js/main.13dc4323.js.map"
+    "main.277f91a3.css.map": "/portfolio-website_react/static/css/main.277f91a3.css.map",
+    "main.c8fa13c4.js.map": "/portfolio-website_react/static/js/main.c8fa13c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.78a23234.css",
-    "static/js/main.13dc4323.js"
+    "static/css/main.277f91a3.css",
+    "static/js/main.c8fa13c4.js"
   ]
 }
