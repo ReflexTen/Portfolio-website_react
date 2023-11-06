@@ -1,10 +1,24 @@
-const NavLink = ({ text, href, activeLink, activeLinkClick, loh }) => {
+const NavLink = ({
+  text,
+  href,
+  activeLink,
+  setActiveLink,
+  activeButtonMenu,
+  setActiveButtonMenu,
+}) => {
   return (
-    <li className="navbar__item" onClick={loh}>
+    <li
+      className={`navbar__item ${
+        activeLink == text ? 'navbar__item--active' : ''
+      }`}
+    >
       <a
-        className={`navbar__link ${activeLink == text ? 'active' : ''}`}
+        className="navbar__link"
         href={href}
-        onClick={() => activeLinkClick(text)}
+        onClick={() => {
+          setActiveLink(text)
+          setActiveButtonMenu(!activeButtonMenu)
+        }}
       >
         {text}
       </a>

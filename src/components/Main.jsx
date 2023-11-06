@@ -1,4 +1,5 @@
 const Main = props => {
+  
   window.onscroll = () => {
     props.children.forEach(sec => {
       const secCurrent = Object.values(sec.props)[0].current
