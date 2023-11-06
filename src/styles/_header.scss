@@ -45,6 +45,11 @@
   }
   // .navbar__item
   &__item {
+    &--active {
+      & a {
+        color: $main-color;
+      }
+    }
   }
   // .navbar__link
   &__link {
@@ -67,9 +72,9 @@
   }
 }
 
-.active {
-  color: $main-color;
-}
+// .active {
+
+// }
 
 .menu-icon {
   position: relative;

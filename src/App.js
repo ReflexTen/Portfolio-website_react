@@ -12,17 +12,12 @@ import './styles/style.scss'
 
 function App() {
   const [activeLink, setActiveLink] = useState('Главный экран')
-  const menuIcon = useRef()
-  const navBar = useRef()
+  const [activeButtonMenu, setActiveButtonMenu] = useState(false)
+
   const portfolio = useRef()
   const contacts = useRef()
   const homeRef = useRef()
   const aboutRef = useRef()
-
-  function loh() {
-    menuIcon.current.classList.toggle('active-menu')
-    navBar.current.classList.toggle('active')
-  }
 
   const activeLinkHandler = link => {
     setActiveLink(link)
@@ -31,11 +26,11 @@ function App() {
   return (
     <div className="App">
       <Header
-        menuIcon={menuIcon}
-        navBar={navBar}
-        loh={loh}
+        activeButtonMenu={activeButtonMenu}
+        setActiveButtonMenu={setActiveButtonMenu}
+        // ///////////////
         activeLink={activeLink}
-        activeLinkClick={activeLinkHandler}
+        setActiveLink={setActiveLink}
       />
 
       <Main activeLinkScroll={activeLinkHandler}>

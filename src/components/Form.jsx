@@ -7,21 +7,21 @@ const Form = ({ setActiveNotification }) => {
   const sendEmail = e => {
     e.preventDefault()
 
-    // emailjs
-    //   .sendForm(
-    //     'service_684619i',
-    //     'template_g57ft34',
-    //     form.current,
-    //     'n5lTyT54eE5Y6RiiX'
-    //   )
-    //   .then(
-    //     result => {
-    //       console.log(result.text)
-    //     },
-    //     error => {
-    //       console.log(error.text)
-    //     }
-    //   )
+    emailjs
+      .sendForm(
+        'service_684619i',
+        'template_g57ft34',
+        form.current,
+        'n5lTyT54eE5Y6RiiX'
+      )
+      .then(
+        result => {
+          console.log(result.text)
+        },
+        error => {
+          console.log(error.text)
+        }
+      )
 
     setTimeout(() => {
       e.target.reset()
